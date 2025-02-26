@@ -43,6 +43,7 @@ examples = [
 conv = None
 conv_history = {"user": [], "model": []}
 
+os.environ["GRADIO_TEMP_DIR"] = "/p0/user/mliu/tmp_gradio"
 
 def get_depth_predictor():
     sys.path.append(DEPTH_ANYTHING_PATH)
